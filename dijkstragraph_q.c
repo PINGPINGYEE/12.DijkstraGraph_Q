@@ -65,13 +65,13 @@ void print_status(int distance[], int found[], int n);
 
 // 메인 함수
 int main() {
-    printf("Dijkstra Algorithm using matrix\n");
+    printf("1번 방법 사용\n");
     GraphTypeMatrix* g;
     g = make_graph_matrix();
     shortest_path_matrix(g, 0);
     free(g);
 
-    printf("\nDijkstra Algorithm using list\n");
+    printf("\n2번 방법 힙을 이용해 사용\n");
     GraphTypeList* graph_list = makeGraph_list();
     shortest_path_list(graph_list, 0);
     free(graph_list);
